@@ -14,9 +14,15 @@ module.exports = {
         resolve: `gatsby-source-stripe`,
         options: {
           objects: ["Price"],
-          secretKey: process.env.STRIPE_SECRET_KEY,
+          secretKey: 'sk_test_51KZ7YaJ37P00vqboOjpnUSye7cakAZHohpulcc9AK5N0WjuBHD0syoMnR4sJxtjhgXhUcTWIxE12QTFOK2fVAuUv00qRklR7dH',
           downloadFiles: false,
         },
+      },
+      {
+        resolve: 'gatsby-plugin-snipcartv3',
+        options: {
+          apiKey: 'ZGQ2MDE2MGQtZDUxNy00YTZiLWEwOTAtMmFkM2Q3MGNkOTBkNjM3ODIxMDcxNzY0MzQ5OTQz'
+        }
       }
   ],
 }
